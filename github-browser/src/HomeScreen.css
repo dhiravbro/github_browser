@@ -1,0 +1,165 @@
+.view{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height : 100vh;
+}
+.repo-list{
+    border-right : 1px solid black;
+    padding : 20px;
+}
+.delete-repo-btn{
+    padding : 10px 12px;
+    margin : 0 0 10px auto;
+    display: block;
+}
+.selected-repo{
+    filter: brightness(0.8);
+    background: #d8d8d8;
+}
+.repo-details{
+    padding:20px;
+}
+.repo-details-div{
+    border: 1px solid #9b9b9b;
+    width: 100%;
+    height: 100%;
+}
+.repo-tab{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border :1px solid #9b9b9b;
+    padding : 6px 10px;
+    height : 80px;
+    overflow: hidden;
+}
+.repo-name{
+    padding : 0 0 10px 0;
+    font-weight: 800;
+}
+.repo-description{
+    text-align: left;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding : 10px 0;
+}
+.input-box label{
+    font-size:14px;
+    font-weight: 700;
+    align-self: flex-start;
+    padding : 3px 7px;
+}
+.input-box input{
+    border:1px solid #9b9b9b;
+    padding : 10px 12px;
+}
+.repo-add-btn{
+    width : 100%;
+    padding : 10px 20px;
+    margin : 0 auto;
+}
+.issue-title{
+    text-align: left;
+    font-weight: 700;
+    padding : 5px 10px;
+}
+.tab-div{
+    display: flex;
+    height : 60px;
+    width : 100%;
+    border-top : 1px solid #9b9b9b;
+    border-bottom : 1px solid #9b9b9b;
+}
+.tab{
+    padding : 10px;
+    /* margin : 0 10px 0  0; */
+    border : 1px solid #9b9b9b;
+    width: 100px;
+}
+.active-tab{
+    background: #959595;
+}
+.active-view{
+    padding : 10px 20px;
+}
+.branch{
+    height : 50px;
+    border-radius: 4px;
+    border:1px solid #d4d4d4;
+    margin : 4px 0;
+    display: grid;
+    place-items: center;
+}
+.issue-tab{
+    display: flex;
+    flex-direction: column;
+    border : 1px solid #9b9b9b;
+    margin : 7px 0;
+    border-radius: 7px;
+}
+.issue-author{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+.avatar{
+    height : 50px;
+    width : 50px;
+    border-radius: 100%;
+    margin : 0 10px 0 0;
+}
+.add-repo-button{
+    position: fixed;
+    bottom : 20px;
+    left : 50px;
+    padding : 20px 23px;
+    border-radius: 100%;
+    font-size: 20px;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top : 0;
+    left : 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index : 2;
+}
+.add-repo-modal,.branch-commit-modal{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    width : 40vw;
+    height : 40vh;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding : 20px;
+}
+.branch-commit-modal{
+    width : 60vw;
+    overflow: auto;
+    justify-content: unset;
+}
+.commit-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #9b9b9b;
+    margin : 5px 0;
+    padding: 10px;
+}
+.commit-div p{
+    text-align: left;
+}
+.commit-message{
+    font-weight : 700;
+    font-size:13px;
+    
+}
